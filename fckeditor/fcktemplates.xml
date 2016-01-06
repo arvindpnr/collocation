@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Templates imagesBasePath="fck_template/images/">
+	<Template title="$layoutName">
+		<Description>$layoutName</Description>
+		<Html>
+			<![CDATA[
+			$layoutContent
+			]]>
+		</Html>
+	</Template>
+</Templates>

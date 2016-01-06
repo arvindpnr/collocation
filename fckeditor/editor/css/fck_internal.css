@@ -1,0 +1,216 @@
+/*
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2010 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * This CSS Style Sheet defines rules used by the editor for its internal use.
+ */
+
+/* #########
+ *  WARNING
+ * #########
+ * When changing this file, the minified version of it must be updated in the
+ * fckeditor.html file (see FCK_InternalCSS).
+ */
+
+/* Fix to allow putting the caret at the end of the content in Firefox if
+   clicking below the content. */
+html
+{
+	min-height: 100%;
+}
+
+table.FCK__ShowTableBorders, table.FCK__ShowTableBorders td, table.FCK__ShowTableBorders th
+{
+	border: #d3d3d3 1px solid;
+}
+
+form
+{
+	border: 1px dotted #FF0000;
+	padding: 2px;
+}
+
+.FCK__Flash
+{
+	border: #a9a9a9 1px solid;
+	background-position: center center;
+	background-image: url(images/fck_flashlogo.gif);
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 80px;
+}
+
+.FCK__UnknownObject
+{
+	border: #a9a9a9 1px solid;
+	background-position: center center;
+	background-image: url(images/fck_plugin.gif);
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 80px;
+}
+
+/* Empty anchors images */
+.FCK__Anchor
+{
+	border: 1px dotted #00F;
+	background-position: center center;
+	background-image: url(images/fck_anchor.gif);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 15px;
+	vertical-align: middle;
+}
+
+/* Anchors with content */
+.FCK__AnchorC
+{
+	border: 1px dotted #00F;
+	background-position: 1px center;
+	background-image: url(images/fck_anchor.gif);
+	background-repeat: no-repeat;
+	padding-left: 18px;
+}
+
+/* Any anchor for non-IE, if we combine it with the previous rule IE ignores all. */
+a[name]
+{
+	border: 1px dotted #00F;
+	background-position: 0 center;
+	background-image: url(images/fck_anchor.gif);
+	background-repeat: no-repeat;
+	padding-left: 18px;
+}
+
+.FCK__PageBreak
+{
+	background-position: center center;
+	background-image: url(images/fck_pagebreak.gif);
+	background-repeat: no-repeat;
+	clear: both;
+	display: block;
+	float: none;
+	width: 100%;
+	border-top: #999999 1px dotted;
+	border-bottom: #999999 1px dotted;
+	border-right: 0px;
+	border-left: 0px;
+	height: 5px;
+}
+
+/* Hidden fields */
+.FCK__InputHidden
+{
+	width: 19px;
+	height: 18px;
+	background-image: url(images/fck_hiddenfield.gif);
+	background-repeat: no-repeat;
+	vertical-align: text-bottom;
+	background-position: center center;
+}
+
+.FCK__ShowBlocks p,
+.FCK__ShowBlocks div,
+.FCK__ShowBlocks pre,
+.FCK__ShowBlocks address,
+.FCK__ShowBlocks blockquote,
+.FCK__ShowBlocks h1,
+.FCK__ShowBlocks h2,
+.FCK__ShowBlocks h3,
+.FCK__ShowBlocks h4,
+.FCK__ShowBlocks h5,
+.FCK__ShowBlocks h6
+{
+	background-repeat: no-repeat;
+	border: 1px dotted gray;
+	padding-top: 8px;
+	padding-left: 8px;
+}
+
+.FCK__ShowBlocks p
+{
+	background-image: url(images/block_p.png);
+}
+
+.FCK__ShowBlocks div
+{
+	background-image: url(images/block_div.png);
+}
+
+.FCK__ShowBlocks pre
+{
+	background-image: url(images/block_pre.png);
+}
+
+.FCK__ShowBlocks address
+{
+	background-image: url(images/block_address.png);
+}
+
+.FCK__ShowBlocks blockquote
+{
+	background-image: url(images/block_blockquote.png);
+}
+
+.FCK__ShowBlocks h1
+{
+	background-image: url(images/block_h1.png);
+}
+
+.FCK__ShowBlocks h2
+{
+	background-image: url(images/block_h2.png);
+}
+
+.FCK__ShowBlocks h3
+{
+	background-image: url(images/block_h3.png);
+}
+
+.FCK__ShowBlocks h4
+{
+	background-image: url(images/block_h4.png);
+}
+
+.FCK__ShowBlocks h5
+{
+	background-image: url(images/block_h5.png);
+}
+
+.FCK__ShowBlocks h6
+{
+	background-image: url(images/block_h6.png);
+}
+.content { width:690px; float:left; padding:0 30px; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#5A5966;}
+.content h1 {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:16px; color:#2C6587; padding:10px 0;margin:0;}
+.content h2 {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#AAB2C4; padding:0 0 10px 0; margin:0; border-bottom:1px solid #AAB2C4}
+.content h3 {font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#CC392B; padding:10px 0 10px 13px; margin:0; background:url(../images/icons/list-icon.png) left 15px no-repeat;}
+.content ol { margin:0; padding:0;}
+.content ol li { list-style:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#5A5966; padding:0 0 0 13px; }
+.content img { /*float:right;*/ padding:4px; border:1px solid #AAB2C4; margin:0 0 0 10px }
+.content h4 {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:16px; color:#5C5B66; padding:10px 0 10px 0; margin:0; }
+
+.content table {font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#5C5B66; padding:10px 0 10px 0; margin:0; width:100%; }
+.content table td {font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#5C5B66; padding:6px 5px; background:url(../images/bg-td.jpg) left bottom repeat-x #fff; text-align:left;  border-top:1px solid #5593B7; border-left:1px solid #5593B7; border-right:1px solid #5593B7; border-bottom:1px solid #5593B7; }
+.content table th {font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#5C5B66; padding:8px 5px; font-weight:bold; border:1px solid #5593B7;background:url(../images/bg-th.jpg) left top repeat-x ;text-align:left }
+
+.content h5 {font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#CC392B; margin:0; padding:0 0 10px 0; }
+
+.content ul { margin:0; padding:10px 0;}
+.content ul li { list-style:none; display:block; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#5A5966; padding:0 0 0 13px; background:url(../images/icons/bullet3.png) left 4px no-repeat; font-weight:normal; }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Styles>
+	<Style name="breadcrumb" element="div">
+		<Attribute name="style" value="color:#666; text-decoration:none; margin-bottom:10px; padding-bottom:20px; border-bottom:1px dotted #ccc;" />
+	</Style>
+	<Style name="list" element="div">
+		<Attribute name="style" value="width:700px; float:left; padding:0 0 10px 0;" />
+	</Style>	
+	<Style name="formHead" element="div">
+		<Attribute name="style" value="padding:5px; background:#ECECEC; border:1px solid #D8D9DA;" />
+	</Style>	
+	<Style name="form" element="div">
+		<Attribute name="style" value="padding:10px 0; margin:0; width:680px;" />
+	</Style>	
+	<Style name="li" element="ol">
+		<Attribute name="style" value="list-style-type:none; display:inline; background:url(../images/tick.gif) left 7px no-repeat; float:left;  width:650px; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#003366; line-height:20px; text-align:left;   text-decoration:none; padding:0 0 0 10px;" />
+	</Style>		
+</Styles>
